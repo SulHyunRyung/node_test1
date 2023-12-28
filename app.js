@@ -5,7 +5,7 @@ import connect from "./schemas/index.js";
 import memberRouter from "./routes/member.router.js";
 
 const app = express();
-const PORT = 4000;
+const PORT = 3000;
 
 connect();
 
