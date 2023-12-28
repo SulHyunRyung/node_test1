@@ -47,7 +47,7 @@ router.get("/user/:userId", async (req, res) => {
   }
 });
 
-// 회원 정보 추가 API
+// 회원 정보 추가 API //
 router.post("/user", async (req, res) => {
   try {
     const newMember = new Member({
