@@ -11,7 +11,7 @@ router.get("/user", async (req, res) => {
   try {
     const members = await Member.find();
     const formattedMembers = members.map((member) => ({
-      userId: member.userId,
+      userId: member._id,
       name: member.name,
       email: member.email,
       pw: member.pw,
