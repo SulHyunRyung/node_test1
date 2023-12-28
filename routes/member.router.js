@@ -11,7 +11,7 @@ router.get("/user", async (req, res) => {
   try {
     const members = await Member.find();
     const formattedMembers = members.map((member) => ({
-      userId: member._id,
+      userId: member.userId,
       name: member.name,
       email: member.email,
       pw: member.pw,
@@ -47,7 +47,7 @@ router.get("/user/:userId", async (req, res) => {
   }
 });
 
-// 회원 정보 추가 API //
+// 회원 정보 추가 API
 router.post("/user", async (req, res) => {
   try {
     const newMember = new Member({
