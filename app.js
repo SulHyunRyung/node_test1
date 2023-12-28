@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  return res.json({ message: "항해99 18기 강동우" });
+  return res.json({ message: "항해99 18기 강동우." });
 });
 
 app.use("/", [router, memberRouter]);
